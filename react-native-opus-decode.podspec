@@ -9,12 +9,14 @@ Pod::Spec.new do |s|
   s.authors      = "Doron Pearl, Wix.com"
   s.homepage     = package["homepage"]
   s.license      = package["license"]
-  s.platforms    = { :ios => "10.0" }
+  s.platforms    = { :ios => min_ios_version_supported }
   s.source       = { :git => "https://github.com/wix-incubator/react-native-opus-decode.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,c}"
 
-  s.dependency "React-Core"
-  s.vendored_frameworks = 'ios/Ogg.framework'
+
+  install_modules_dependencies(s)
+
+  s.vendored_frameworks = 'ios/Ogg.xcframework'
   s.vendored_libraries = 'ios/opus/lib/libopus.a'
 end

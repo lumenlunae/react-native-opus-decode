@@ -1,22 +1,7 @@
-import { NativeModules, Platform } from 'react-native';
 import RNFS from 'react-native-fs';
+import OpusDecode from './NativeOpusDecode';
 
-const LINKING_ERROR =
-  `The package 'react-native-opus-decode' doesn't seem to be linked. Make sure: \n\n` +
-  Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
-  '- You rebuilt the app after installing the package\n' +
-  '- You are not using Expo managed workflow\n';
 
-const OpusDecode = NativeModules.OpusDecode
-  ? NativeModules.OpusDecode
-  : new Proxy(
-      {},
-      {
-        get() {
-          throw new Error(LINKING_ERROR);
-        },
-      }
-    );
 
 export function generateGuid() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
