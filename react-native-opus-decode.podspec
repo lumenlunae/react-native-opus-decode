@@ -17,6 +17,5 @@ Pod::Spec.new do |s|
 
   install_modules_dependencies(s)
 
-  s.vendored_frameworks = 'ios/Ogg.xcframework'
-  s.vendored_libraries = 'ios/opus/lib/libopus.a'
+  s.vendored_frameworks = 'ios/Ogg.xcframework', 'ios/YbridOpus.xcframework'
 end

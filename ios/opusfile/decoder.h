@@ -8,8 +8,16 @@
 #ifndef opusfile_example_h
 #define opusfile_example_h
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int decodeOpus(const char *_argv, char * fileNameOut);
 
 #include <stdio.h>
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* opusfile_example_h */

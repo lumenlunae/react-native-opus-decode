@@ -1,5 +1,5 @@
 #import <OpusDecodeSpec/OpusDecodeSpec.h>
 
-@interface OpusDecode : NSObject <OpusDecodeSpec>
+@interface OpusDecode : NSObject <NativeOpusDecodeSpec>
 
 @end

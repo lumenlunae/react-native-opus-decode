@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EDDB5E42807EA3A00B353DF /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDDB5D62807EA3A00B353DF /* libopus.a */; };
 		4EDDB5E52807EA3A00B353DF /* opusfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5D92807EA3A00B353DF /* opusfile.c */; };
 		4EDDB5E62807EA3A00B353DF /* info.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5DA2807EA3A00B353DF /* info.c */; };
 		4EDDB5E72807EA3A00B353DF /* internal.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5DE2807EA3A00B353DF /* internal.c */; };
@@ -17,6 +16,7 @@
 		4EDDB5EF2807EA4E00B353DF /* decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5EE2807EA4E00B353DF /* decoder.c */; };
 		4EDDB5F22807EAE000B353DF /* decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDB5F02807EAE000B353DF /* decoder.c */; };
 		7B1943442E01FB8800B0E4E1 /* Ogg.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1943432E01FB8800B0E4E1 /* Ogg.xcframework */; };
+		7B1943782E03250900B0E4E1 /* YbridOpus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1943772E03250900B0E4E1 /* YbridOpus.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,13 +32,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libOpusDecode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpusDecode.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		134814201AA4EA6300B7C361 /* libOpusDecode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libOpusDecode.a; path = "/Users/matthewaherz/Documents/GitHub/react-native-opus-decode/ios/build/Debug-iphoneos/libOpusDecode.a"; sourceTree = "<absolute>"; };
 		4EDDB5D02807EA3A00B353DF /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
 		4EDDB5D12807EA3A00B353DF /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
 		4EDDB5D22807EA3A00B353DF /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
 		4EDDB5D32807EA3A00B353DF /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
 		4EDDB5D42807EA3A00B353DF /* opus_projection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_projection.h; sourceTree = "<group>"; };
-		4EDDB5D62807EA3A00B353DF /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
 		4EDDB5D82807EA3A00B353DF /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
 		4EDDB5D92807EA3A00B353DF /* opusfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = opusfile.c; sourceTree = "<group>"; };
 		4EDDB5DA2807EA3A00B353DF /* info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = info.c; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		4EDDB5EE2807EA4E00B353DF /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
 		4EDDB5F02807EAE000B353DF /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
 		7B1943432E01FB8800B0E4E1 /* Ogg.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Ogg.xcframework; sourceTree = "<group>"; };
+		7B1943772E03250900B0E4E1 /* YbridOpus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = YbridOpus.xcframework; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* OpusDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpusDecode.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* OpusDecode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpusDecode.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,8 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EDDB5E42807EA3A00B353DF /* libopus.a in Frameworks */,
 				7B1943442E01FB8800B0E4E1 /* Ogg.xcframework in Frameworks */,
+				7B1943782E03250900B0E4E1 /* YbridOpus.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +72,6 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libOpusDecode.a */,
-				B3E7B5891CC2AC0600A0062D /* OpusDecode.mm */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +108,6 @@
 		4EDDB5D52807EA3A00B353DF /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				4EDDB5D62807EA3A00B353DF /* libopus.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -144,11 +141,13 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				7B1943772E03250900B0E4E1 /* YbridOpus.xcframework */,
 				7B1943432E01FB8800B0E4E1 /* Ogg.xcframework */,
 				4EDDB5CD2807EA3A00B353DF /* opus */,
 				4EDDB5D72807EA3A00B353DF /* opusfile */,
 				4EDDB5F02807EAE000B353DF /* decoder.c */,
 				B3E7B5881CC2AC0600A0062D /* OpusDecode.h */,
+				B3E7B5891CC2AC0600A0062D /* OpusDecode.mm */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";

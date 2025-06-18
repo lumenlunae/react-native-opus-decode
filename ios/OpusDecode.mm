@@ -5,24 +5,19 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_REMAP_METHOD(decodeFromUri,
-                 withSourceFile:(nonnull NSString*)sourceFile
-                 withSourceFile:(nonnull NSString*)destFile
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
-{
-    const char *fileNameIn=[sourceFile UTF8String];
-    const char *filenameOut=[destFile UTF8String];
-    decodeOpus(fileNameIn, filenameOut);
-    resolve(destFile);
+- (void)decodeFromUri:(nonnull NSString *)sourcePath destPath:(nonnull NSString *)destPath resolve:(nonnull RCTPromiseResolveBlock)resolve reject:(nonnull RCTPromiseRejectBlock)reject {
+  const char *fileNameIn = [sourcePath UTF8String];
+  char *filenameOut = (char*)[destPath UTF8String];
+  decodeOpus(fileNameIn, filenameOut);
+  resolve(destPath);
 }
-
 
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {
-    return std::make_shared<facebook::react::OpusDecodeSpecJSI>(params);
+    return std::make_shared<facebook::react::NativeOpusDecodeSpecJSI>(params);
 }
+
 
 @end
