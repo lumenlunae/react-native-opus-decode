@@ -3,8 +3,7 @@
   "version": "0.22.11",
   "homepage": "https://github.com/wix-incubator/react-native-opus-decode",
   "description": "Opus Decode",
-  "main": "./lib/module/index",
-  "module": "lib/module/index",
+  "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
     ".": {
@@ -14,8 +13,6 @@
     },
     "./package.json": "./package.json"
   },
-  "react-native": "src/index",
-  "source": "src/index",
   "files": [
     "src",
     "lib",
@@ -180,5 +177,5 @@
     "type": "turbo-module",
     "version": "0.51.0"
   },
-  "packageManager": "yarn@3.5.0+sha512.2dc70be5fce9f66756d25b00a888f3ca66f86b502b76750e72ba54cec89da767b938c54124595e26f868825688e0fe3552c26c76a330673343057acadd5cfcf2"
+  "packageManager": "yarn@3.6.1+sha512.de524adec81a6c3d7a26d936d439d2832e351cdfc5728f9d91f3fc85dd20b04391c038e9b4ecab11cae2b0dd9f0d55fd355af766bc5c1a7f8d25d96bb2a0b2ca"
 }
